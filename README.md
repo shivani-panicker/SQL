@@ -1,2 +1,2 @@
 # SQL-
-All SQL Projects
+All SQL Practise
