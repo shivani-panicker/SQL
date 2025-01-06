@@ -1,29 +1,36 @@
-# SQL-
-All SQL Practise
+SQL Practice
+This repository contains a series of SQL exercises that cover key database operations. These practices focus on basic data manipulation (INSERT, DELETE, UPDATE), data retrieval (JOIN, subqueries), and advanced techniques like window functions to analyze and summarize data. This project is designed to help you master essential SQL concepts required for working with relational databases.
 
-SQL Database Operations:
-These practices cover basic data manipulation (INSERT, DELETE, UPDATE), data retrieval (JOIN, subqueries), and advanced SQL techniques such as window functions for analyzing and summarizing data. This project helps in mastering key SQL concepts essential for working with relational databases.
+Advanced Concepts:
+1. Common Table Expressions (CTEs)
+A Common Table Expression (CTE) is typically used for queries that involve recursive data. It helps in simplifying complex queries and improves readability by avoiding repetitive code.
+
+CTE vs Joins:
+Regular JOINs work well for non-recursive relationships but can struggle with hierarchical or recursive data (e.g., retrieving employees at all levels in a company hierarchy). CTEs are more suited for handling recursion efficiently.
+
+When to Use CTEs:
+
+Simple Joins: When querying one or two levels of relationships (e.g., fetching an employee and their direct manager), a simple JOIN is sufficient.
+CTEs: Use CTEs for recursive relationships or to simplify complex queries, such as retrieving all employees under a manager, including subordinates at multiple levels.
+2. Temporary Tables
+Temporary tables allow you to store results temporarily and perform further operations on them. This is especially useful when you need to perform specific queries or aggregate functions on intermediate results, saving time and avoiding repetitive coding.
+
+Benefits:
+Store intermediate results for further querying.
+Perform complex operations on these results (e.g., aggregates, filters).
+3. Stored Procedures
+Stored procedures are used to group SQL commands into a single, reusable unit of work. They are useful for automating repetitive tasks, handling conditions (e.g., IF statements), and managing transactions (e.g., error handling and ensuring data integrity).
+
+Example:
+A stored procedure can be used to update the stock of a product:
+
+Check if product 101 exists.
+If it does, add 10 to its stock.
+If not, display an error message: "Product not found."
+Why Use Stored Procedures:
+
+Avoid writing repetitive logic.
+Easily reuse the same logic across multiple parts of your application.
+Keep your SQL code organized, manageable, and maintainable.
 
 
-MAIN POINTS 
-Cte ( common table expression is usually used for queries containing recursive data )
-extra: saves time avoids repetative coding.
--  CTE VS JOINS : a regular JOIN would not handle recursion well. It would only show a single level of relationships. A CTE allows you to easily handle recursion and find employees at all levels in the hierarchy. 
- - WHICH TO USE WHEN
- - Simple Joins: If you're just retrieving data from one or two levels of relationships (e.g., an employee and their direct manager), a simple join works perfectly fine. 
-   - CTE: Use CTE when you have a recursive relationship or you need to simplify complex queries. For example, if you need to find all employees under a manager, including all their subordinates at different levels, a CTE is much easier to manage.
-  
-Temp Tables (Store results in temporaty tables)
-extra: can carry out specific quereies eg aggregate functions on the tamp tables which saves time avoids repetative coding.
-
-Stored Procedure( When you need to run a set of SQL commands repeatedly, and you want to organize logic like checking conditions (if something is true, do this; if not, do that), or handle errors and transactions (to ensure everything happens correctly).)
-- Example: You want to update the stock of a product, but only if it exists. If it doesn’t, you show an error message. A stored procedure can take care of that logic for you.
--- This will:
-
---- Check if product 101 exists.
---- If it does, it will add 10 to its stock.
---- If it doesn’t exist, it will print "Product not found".
---- Why is This Helpful?
---- You don’t have to write the UPDATE logic each time.
---- You can use this procedure in many places in your application without repeating the same code.
---- It keeps your SQL logic organized and easy to manage.
