@@ -1,4 +1,5 @@
-SQL Practice
+# **SQL Practice**
+
 This repository contains a series of SQL exercises that cover key database operations. These practices focus on basic data manipulation (INSERT, DELETE, UPDATE), data retrieval (JOIN, subqueries), and advanced techniques like window functions to analyze and summarize data. This project is designed to help you master essential SQL concepts required for working with relational databases.
 
 Advanced Concepts:
