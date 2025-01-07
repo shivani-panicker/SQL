@@ -4,6 +4,7 @@ This repository contains a series of SQL exercises that cover key database opera
 
 # Content
 - DAY 1 : Employee Management System
+- DAY 2 : Library Management System
 
 ## ADVANCED SQL CONCEPTS
 
