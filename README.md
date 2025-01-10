@@ -8,6 +8,7 @@ This repository contains a series of SQL exercises that cover key database opera
 - DAY 3 : Customer Management System
 - DAY 4 : Student Management System
 - DAY 5 : Restraunt Mangement System
+- DAY 6 : Clothes Shop Management System
 
 ## ADVANCED SQL CONCEPTS
 
