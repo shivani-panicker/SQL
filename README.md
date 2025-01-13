@@ -10,6 +10,7 @@ This repository contains a series of SQL exercises that cover key database opera
 - DAY 5 : Restraunt Mangement System
 - DAY 6 : Clothes Shop Management System
 - DAY 7 : Sales Management
+- DAY 8 : Laptop Management
 
 ## ADVANCED SQL CONCEPTS
 
