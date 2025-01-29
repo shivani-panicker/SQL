@@ -12,6 +12,7 @@ This repository contains a series of SQL exercises that cover key database opera
 - DAY 7 : Sales Management
 - DAY 8 : Laptop Management
 - DAY 9 : Movie Rental System
+- DAY 10: Sales Management System
 
 ## ADVANCED SQL CONCEPTS
 
